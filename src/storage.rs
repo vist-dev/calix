@@ -34,6 +34,7 @@ where
 }
 
 /// ファイルが存在する場合のみ読み込む
+#[allow(dead_code)]
 pub fn read_msgpack_optional<T>(path: &Path) -> CalixResult<Option<T>>
 where
     T: serde::de::DeserializeOwned,
