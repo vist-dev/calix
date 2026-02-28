@@ -10,6 +10,9 @@ pub struct Commit {
     /// 親コミットのID（最初のコミットはNone）
     pub parent_id: Option<String>,
 
+    /// 第二親コミットのID（マージコミットのみ）
+    pub second_parent_id: Option<String>,
+
     /// コミットメッセージ
     pub message: String,
 
